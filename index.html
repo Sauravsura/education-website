@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EduSmart - Learning Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>EduSmart Learning</h1>
+<p>Learn Programming, AI and Technology</p>
+</header>
+
+<section class="courses">
+<h2>Popular Courses</h2>
+
+<div class="card">
+<h3>Python Programming</h3>
+<p>Learn Python from beginner to advanced.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>HTML, CSS, JavaScript complete course.</p>
+</div>
+
+<div class="card">
+<h3>Data Science</h3>
+<p>Machine learning and data analysis.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 EduSmart</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "a628e0e6-b84c-42d0-8a80-6dcf00a39928", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "e682b102-c2e9-4d93-af23-015b660dad1c", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
